@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@iconify-json/lucide": "^1.2.91",
-    "typescript": "~5.9.3"
+    "typescript": "~5.9.3",
+    "vite": "^6.4.3"
   }
 }
