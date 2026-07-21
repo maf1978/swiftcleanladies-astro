@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# build
+dist/
+.astro/
+.wrangler/
+
+# env / secrets
+.env
+.env.*
+!.env.example
+
+# logs / OS / IDE
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Cloudflare / local
+.dev.vars
+.mf/

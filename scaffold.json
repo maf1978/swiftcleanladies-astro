@@ -1,0 +1,143 @@
+{
+  "description": "Template files for local business website scaffold",
+  "configFiles": [
+    {
+      "path": "astro.config.mjs",
+      "description": "Astro 5 configuration with Tailwind CSS v4, sitemap, and optional Cloudflare adapter",
+      "placeholders": ["__SITE_URL__"]
+    },
+    {
+      "path": "package.json",
+      "description": "Node.js package manifest with Astro 5, Tailwind v4, and all required dependencies",
+      "placeholders": ["__PROJECT_SLUG__", "__SITE_URL__"]
+    },
+    {
+      "path": "public/robots.txt",
+      "description": "Robots.txt with sitemap reference",
+      "placeholders": ["__SITE_URL__"]
+    },
+    {
+      "path": "src/styles/global.css",
+      "description": "Global CSS with Tailwind v4 imports, custom fonts, color tokens, and utility classes",
+      "placeholders": ["__PRIMARY_COLOR__", "__ACCENT_COLOR__"]
+    }
+  ],
+  "dataTemplates": [
+    {
+      "path": "src/data/business.ts",
+      "description": "Core business configuration: name, phone, email, address, hours, schema.org type, social links. Agent generates this from user input.",
+      "requiredFields": ["name", "phone", "email", "address", "city", "state", "zip", "schemaType", "hours"]
+    },
+    {
+      "path": "src/data/serviceAreas.ts",
+      "description": "Array of service areas with slug, name, county, coordinates, and nearby areas for internal linking. Agent generates from user-provided locations.",
+      "requiredFields": ["slug", "name", "county", "state", "nearby"]
+    },
+    {
+      "path": "src/data/serviceTypes.ts",
+      "description": "Array of services offered with slug, name, shortDescription, icon identifier, and related services. Agent generates from user-provided services.",
+      "requiredFields": ["slug", "name", "shortDescription", "relatedServices"]
+    },
+    {
+      "path": "src/data/seoContent.ts",
+      "description": "SEO content maps keyed by area-service combination. Includes page titles, meta descriptions, H1 headings, intro paragraphs, FAQ arrays, and testimonials. Agent generates unique content for each combination.",
+      "requiredFields": ["title", "metaDescription", "h1", "intro", "faqs", "testimonials"]
+    }
+  ],
+  "reusableFiles": [
+    {
+      "path": "tsconfig.json",
+      "description": "TypeScript configuration extending Astro strict preset"
+    },
+    {
+      "path": "src/content.config.ts",
+      "description": "Astro 5 content collection schemas for blog posts"
+    },
+    {
+      "path": "src/lib/urls.ts",
+      "description": "URL builder helpers for service pages, area pages, and blog posts"
+    },
+    {
+      "path": "src/layouts/BaseLayout.astro",
+      "description": "Root HTML layout with SEO head, header, footer, and slot"
+    },
+    {
+      "path": "src/components/SEO.astro",
+      "description": "SEO head component with meta tags, Open Graph, canonical URL, and JSON-LD schema"
+    },
+    {
+      "path": "src/components/Header.astro",
+      "description": "Responsive site header with navigation, mobile menu, and CTA button"
+    },
+    {
+      "path": "src/components/Footer.astro",
+      "description": "Site footer with service area links, service links, contact info, and copyright"
+    },
+    {
+      "path": "src/components/Breadcrumbs.astro",
+      "description": "Breadcrumb navigation with schema.org BreadcrumbList markup"
+    },
+    {
+      "path": "src/components/SeoFaq.astro",
+      "description": "FAQ accordion section with schema.org FAQPage markup"
+    },
+    {
+      "path": "src/components/SeoRelatedLinks.astro",
+      "description": "Internal linking grid showing related service-area pages"
+    },
+    {
+      "path": "src/components/SeoServiceAreas.astro",
+      "description": "Service areas grid section for linking to all area pages"
+    },
+    {
+      "path": "src/components/SeoTestimonials.astro",
+      "description": "Customer testimonials section with schema.org Review markup"
+    },
+    {
+      "path": "src/pages/index.astro",
+      "description": "Homepage with hero, services overview, areas grid, testimonials, and CTA"
+    },
+    {
+      "path": "src/pages/about.astro",
+      "description": "About page with business story, team, values, and trust signals"
+    },
+    {
+      "path": "src/pages/contact.astro",
+      "description": "Contact page with form, map embed placeholder, phone/email, and hours"
+    },
+    {
+      "path": "src/pages/services/index.astro",
+      "description": "Services directory listing all service types with descriptions"
+    },
+    {
+      "path": "src/pages/services/[service].astro",
+      "description": "Individual service page with getStaticPaths from serviceTypes data"
+    },
+    {
+      "path": "src/pages/services/[area]/[service].astro",
+      "description": "Programmatic service-area combination page, the core SEO page type"
+    },
+    {
+      "path": "src/pages/areas/index.astro",
+      "description": "Service areas directory listing all locations served"
+    },
+    {
+      "path": "src/pages/areas/[area].astro",
+      "description": "Individual area page with getStaticPaths from serviceAreas data"
+    },
+    {
+      "path": "src/pages/blog/index.astro",
+      "description": "Blog listing page pulling from content collections"
+    },
+    {
+      "path": "src/pages/blog/[slug].astro",
+      "description": "Individual blog post page with content collection rendering"
+    }
+  ],
+  "placeholders": {
+    "__SITE_URL__": "Full website URL with https:// (e.g., https://www.austinplumbing.com)",
+    "__PROJECT_SLUG__": "Kebab-case project name for package.json (e.g., austin-plumbing-pros)",
+    "__PRIMARY_COLOR__": "Primary brand color as HSL values for Tailwind CSS v4 theme tokens (e.g., 142 52% 28%)",
+    "__ACCENT_COLOR__": "Accent/CTA color as HSL values for Tailwind CSS v4 theme tokens (e.g., 35 92% 50%)"
+  }
+}
