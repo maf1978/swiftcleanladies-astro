@@ -26,13 +26,29 @@ const { title, description, canonicalUrl, ogImage, schema, noindex } = Astro.pro
     <!-- Favicon -->
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-    <!-- Google Fonts: Lexend (matches live Swiftclean Ladies site) -->
+    <!-- Lexend: non-blocking font load (display=swap already in URL) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- Preload LCP hero candidate -->
+    <link rel="preload" as="image" href="/images/hero-640.webp" type="image/webp" fetchpriority="high" />
 
     <!-- SEO Head (title, meta, OG, Twitter, schema) -->
     <SEO
@@ -63,12 +79,16 @@ const { title, description, canonicalUrl, ogImage, schema, noindex } = Astro.pro
       <slot />
     </main>
     <Footer />
-    <!-- GoHighLevel chat widget -->
-    <script
-      is:inline
-      src="https://widgets.leadconnectorhq.com/loader.js"
-      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-      data-widget-id="6a5bffc2c02522215a5615c0"
-    ></script>
+    <!-- GoHighLevel chat widget (deferred so it does not compete with LCP) -->
+    <script is:inline>
+      window.addEventListener('load', function () {
+        var s = document.createElement('script');
+        s.src = 'https://widgets.leadconnectorhq.com/loader.js';
+        s.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
+        s.setAttribute('data-widget-id', '6a5bffc2c02522215a5615c0');
+        s.async = true;
+        document.body.appendChild(s);
+      });
+    </script>
   </body>
 </html>

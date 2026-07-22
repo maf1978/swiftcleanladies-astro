@@ -30,7 +30,7 @@ export const serviceTypes: ServiceType[] = [
     priceRange: { min: 0, max: 0 },
     emergency: false,
     icon: 'lucide:calendar-check',
-    image: '/images/services/recurring-residential-cleaning.png',
+    image: '/images/services/recurring-residential-cleaning.webp',
     processSteps: [
       { title: 'Share your priorities', description: 'Tell us rooms, frequency, and any add-ons before the first visit.' },
       { title: 'Confirm the plan', description: 'We match scope to your home and lock a recurring window.' },
@@ -47,7 +47,7 @@ export const serviceTypes: ServiceType[] = [
     priceRange: { min: 0, max: 0 },
     emergency: false,
     icon: 'lucide:clock',
-    image: '/images/services/one-time-cleaning.png',
+    image: '/images/services/one-time-cleaning.webp',
     processSteps: [
       { title: 'Pick a time block', description: 'Choose a 2 to 5-hour slot that matches how much you want done.' },
       { title: 'Rank the rooms', description: 'List kitchens, baths, floors, or guest areas first.' },
@@ -64,7 +64,7 @@ export const serviceTypes: ServiceType[] = [
     priceRange: { min: 0, max: 0 },
     emergency: false,
     icon: 'lucide:sparkles',
-    image: '/images/services/deep-cleaning.png',
+    image: '/images/services/deep-cleaning.webp',
     processSteps: [
       { title: 'Assess buildup', description: 'We note kitchens, baths, and detail zones that need extra time.' },
       { title: 'Detail the hard areas', description: 'Appliances, fixtures, baseboards, and overlooked surfaces get attention.' },
@@ -81,7 +81,7 @@ export const serviceTypes: ServiceType[] = [
     priceRange: { min: 0, max: 0 },
     emergency: false,
     icon: 'lucide:building-2',
-    image: '/images/services/commercial-and-office-cleaning.png',
+    image: '/images/services/commercial-and-office-cleaning.webp',
     processSteps: [
       { title: 'Walk the site', description: 'Share floor plan, access, and preferred visit windows.' },
       { title: 'Set the checklist', description: 'Reception, desks, rooms, and high-touch points are scoped.' },
@@ -98,7 +98,7 @@ export const serviceTypes: ServiceType[] = [
     priceRange: { min: 0, max: 0 },
     emergency: false,
     icon: 'lucide:hard-hat',
-    image: '/images/services/new-construction-cleaning.png',
+    image: '/images/services/new-construction-cleaning.webp',
     processSteps: [
       { title: 'Confirm the milestone', description: 'Rough clean, final clean, or both.' },
       { title: 'Clear construction dust', description: 'Surfaces, floors, and fixtures get a thorough pass.' },
@@ -115,7 +115,7 @@ export const serviceTypes: ServiceType[] = [
     priceRange: { min: 0, max: 0 },
     emergency: false,
     icon: 'lucide:boxes',
-    image: '/images/services/home-organization.png',
+    image: '/images/services/home-organization.webp',
     processSteps: [
       { title: 'Pick the room', description: 'Start with the closet, pantry, office, or garage that frustrates you most.' },
       { title: 'Sort and decide', description: 'Keep, relocate, or clear items with a clear plan.' },
