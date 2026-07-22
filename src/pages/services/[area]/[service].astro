@@ -5,6 +5,7 @@ import { serviceAreas, getNearbyAreas } from '../../../data/serviceAreas';
 import type { ServiceType } from '../../../data/serviceTypes';
 import type { ServiceArea } from '../../../data/serviceAreas';
 import { serviceUrl, areaUrl, comboUrl, contactUrl } from '../../../lib/urls';
+import { shortServiceName, clipMetaDescription } from '../../../lib/seoMeta';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import SeoFaq from '../../../components/SeoFaq.astro';
@@ -35,9 +36,13 @@ const { area, service } = Astro.props;
 const years = yearsInBusiness();
 const nearbyAreas = getNearbyAreas(area);
 const nearbyNames = nearbyAreas.map((a) => a.name).join(', ');
+const seoName = shortServiceName(service.slug, service.name);
 
-const pageTitle = `${service.name} in ${area.name}, FL | ${business.name}`;
-const pageDescription = `Need ${service.name.toLowerCase()} in ${area.name}? ${business.name} offers ${business.license.toLowerCase()} ${service.name.toLowerCase()} with ${area.responseTime}. Call ${business.phone}.`;
+const pageTitle = `${seoName} in ${area.name}`;
+const pageDescription = clipMetaDescription(
+  `Licensed ${seoName.toLowerCase()} in ${area.name}, FL. Detail-focused care for homes and offices. Request a free quote — call ${business.phone}.`,
+);
+const heroIntro = `${business.name} provides ${service.name.toLowerCase()} in ${area.name}, FL. ${area.responseTime}. Call ${business.phone} for a free quote.`;
 
 const provider = {
   '@type': 'CleaningService',
@@ -163,7 +168,7 @@ const schema = {
             {service.name} in {area.name}, FL
           </h1>
           <p class="mt-4 max-w-3xl text-lg leading-relaxed text-stone-600">
-            {pageDescription}
+            {heroIntro}
           </p>
         </div>
         <div class="mt-6 lg:mt-0 lg:w-80 lg:shrink-0">

@@ -61,7 +61,7 @@ export const business: Business = {
   serviceRadius: 'Crawfordville, Saint Marks, Tallahassee, and Panacea, FL',
   schemaType: 'CleaningService',
   description:
-    'SwiftClean Ladies delivers dependable, detail-focused cleaning for homes, offices, and new house developments in Crawfordville, Saint Marks, Tallahassee, and Panacea, FL.',
+    'Licensed home and office cleaning across Crawfordville, Saint Marks, Tallahassee, and Panacea, FL. Call for a free quote.',
   tagline: 'Professional cleaning that fits the way you live and work',
   ghlWebhookUrl:
     'https://services.leadconnectorhq.com/hooks/gGtmQYvc0s6yNrsidLE4/webhook-trigger/257e084b-3f54-4aa8-a321-ec451c2d80c8',

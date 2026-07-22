@@ -4,6 +4,7 @@ import { business } from '../../data/business';
 import { serviceTypes, getServiceBySlug } from '../../data/serviceTypes';
 import { serviceAreas, getAreaBySlug } from '../../data/serviceAreas';
 import { serviceUrl, areaUrl, comboUrl, contactUrl } from '../../lib/urls';
+import { shortServiceName, clipMetaDescription } from '../../lib/seoMeta';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SeoFaq from '../../components/SeoFaq.astro';
@@ -24,11 +25,13 @@ interface Props {
 const { service } = Astro.props;
 
 const primaryArea = getAreaBySlug('crawfordville')!;
+const seoName = shortServiceName(service.slug, service.name);
 
-const pageTitle = `${service.name} in Crawfordville & Surrounding Areas`;
-const metaDescription = service.description.length > 155
-  ? service.description.slice(0, 152) + '...'
-  : service.description;
+const pageTitle = seoName;
+const metaDescription = clipMetaDescription(
+  `${service.shortDescription} Serving Crawfordville and nearby FL cities. Call ${business.phone}.`,
+);
+const pageHeading = `${service.name} in Crawfordville & Nearby`;
 
 const provider = {
   '@type': 'CleaningService',
@@ -88,7 +91,7 @@ const schema = {
     <div class="lg:flex lg:items-start lg:gap-12">
       <div class="lg:flex-1">
         <h1 class="font-display text-3xl text-brand-900 sm:text-4xl lg:text-5xl">
-          {pageTitle}
+          {pageHeading}
         </h1>
 
         <p class="mt-6 max-w-3xl text-lg leading-relaxed text-stone-600">

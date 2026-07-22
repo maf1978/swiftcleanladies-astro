@@ -1,8 +1,8 @@
 ---
-title: "What to Do Before a Professional Cleaning Visit"
-description: "A short prep checklist for homes and offices before Swiftclean Ladies arrives in Crawfordville and nearby cities."
+title: "Prep Checklist Before a Cleaning Visit"
+description: "A short prep checklist before SwiftClean Ladies arrives for homes and offices in Crawfordville and nearby Florida cities."
 publishDate: "2026-07-05"
-author: "Swiftclean Ladies"
+author: "SwiftClean Ladies"
 category: "maintenance"
 tags: ["prep", "checklist", "home cleaning"]
 readingTime: "4 min read"
