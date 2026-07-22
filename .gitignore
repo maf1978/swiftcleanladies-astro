@@ -21,3 +21,6 @@ Thumbs.db
 # Cloudflare / local
 .dev.vars
 .mf/
+
+reports/
+

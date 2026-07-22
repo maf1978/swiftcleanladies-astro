@@ -16,4 +16,5 @@ Allow: /
 User-agent: Claude-SearchBot
 Allow: /
 
+# Canonical sitemap index (also available as /sitemap.xml via 301)
 Sitemap: https://www.swiftcleanladies.com/sitemap-index.xml

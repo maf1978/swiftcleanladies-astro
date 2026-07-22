@@ -1,0 +1,2 @@
+# Canonical discovery path used by many tools; Astro emits sitemap-index.xml
+/sitemap.xml  /sitemap-index.xml  301
