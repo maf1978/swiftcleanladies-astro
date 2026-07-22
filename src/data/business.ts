@@ -37,9 +37,9 @@ export interface Business {
 }
 
 export const business: Business = {
-  name: 'Swiftclean Ladies',
-  legalName: 'Swiftclean Ladies',
-  owner: 'Swiftclean Ladies Team',
+  name: 'SwiftClean Ladies',
+  legalName: 'SwiftClean Ladies',
+  owner: 'SwiftClean Ladies Team',
   phone: '(850) 815-6998',
   phoneHref: 'tel:+18508156998',
   email: 'swift.clean25@gmail.com',
@@ -61,7 +61,7 @@ export const business: Business = {
   serviceRadius: 'Crawfordville, Saint Marks, Tallahassee, and Panacea, FL',
   schemaType: 'CleaningService',
   description:
-    'Swiftclean Ladies delivers dependable, detail-focused cleaning for homes, offices, and new house developments in Crawfordville, Saint Marks, Tallahassee, and Panacea, FL.',
+    'SwiftClean Ladies delivers dependable, detail-focused cleaning for homes, offices, and new house developments in Crawfordville, Saint Marks, Tallahassee, and Panacea, FL.',
   tagline: 'Professional cleaning that fits the way you live and work',
   ghlWebhookUrl:
     'https://services.leadconnectorhq.com/hooks/gGtmQYvc0s6yNrsidLE4/webhook-trigger/257e084b-3f54-4aa8-a321-ec451c2d80c8',
