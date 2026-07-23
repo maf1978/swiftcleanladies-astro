@@ -16,6 +16,7 @@ Content calendar for [swiftcleanladies.com](https://www.swiftcleanladies.com). U
 4. Weekly vs Biweekly House Cleaning (`/blog/weekly-vs-biweekly-house-cleaning/`) — published 2026-07-23
 5. What Does House Cleaning Include (`/blog/what-does-house-cleaning-include/`) — published 2026-07-23
 6. One-Time Cleaning Before Guests Arrive (`/blog/one-time-cleaning-before-guests/`) — published 2026-07-23
+7. Deep Cleaning Checklist for Florida Homes (`/blog/deep-cleaning-checklist-florida-homes/`) — published 2026-07-23
 
 ---
 
