@@ -14,6 +14,7 @@ Content calendar for [swiftcleanladies.com](https://www.swiftcleanladies.com). U
 2. Choose a House Cleaner in Crawfordville
 3. Prep Checklist Before a Cleaning Visit
 4. Weekly vs Biweekly House Cleaning (`/blog/weekly-vs-biweekly-house-cleaning/`) — published 2026-07-23
+5. What Does House Cleaning Include (`/blog/what-does-house-cleaning-include/`) — published 2026-07-23
 
 ---
 
