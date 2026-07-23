@@ -18,6 +18,15 @@ Content calendar for [swiftcleanladies.com](https://www.swiftcleanladies.com). U
 6. One-Time Cleaning Before Guests Arrive (`/blog/one-time-cleaning-before-guests/`) — published 2026-07-23
 7. Deep Cleaning Checklist for Florida Homes (`/blog/deep-cleaning-checklist-florida-homes/`) — published 2026-07-23
 8. Office Cleaning After Hours in Tallahassee (`/blog/office-cleaning-after-hours-tallahassee/`) — published 2026-07-23
+9. House Cleaning Cost in Crawfordville (`/blog/house-cleaning-cost-crawfordville/`) — AI visibility #2
+10. Recurring vs One-Time Cleaning (`/blog/recurring-vs-one-time-cleaning/`) — AI visibility #7
+11. What Is Included in a Deep Cleaning (`/blog/what-is-included-in-deep-cleaning/`) — AI visibility #3
+12. Cleaning Service Panacea & Saint Marks (`/blog/cleaning-service-panacea-saint-marks/`) — AI visibility #4
+13. Move-Out Cleaning in Wakulla County (`/blog/move-out-cleaning-wakulla-county/`) — AI visibility #5
+14. Local New-Construction Cleaning (`/blog/new-construction-cleaning-near-me/`) — AI visibility #6
+15. Best House Cleaning in Crawfordville (`/blog/best-house-cleaning-crawfordville/`) — AI visibility #1 (reframed)
+
+See also: `docs/AI-VISIBILITY-PAGE-MAP.md`
 
 ---
 
