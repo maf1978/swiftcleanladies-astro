@@ -25,6 +25,7 @@ Content calendar for [swiftcleanladies.com](https://www.swiftcleanladies.com). U
 13. Move-Out Cleaning in Wakulla County (`/blog/move-out-cleaning-wakulla-county/`) — AI visibility #5
 14. Local New-Construction Cleaning (`/blog/new-construction-cleaning-near-me/`) — AI visibility #6
 15. Best House Cleaning in Crawfordville (`/blog/best-house-cleaning-crawfordville/`) — AI visibility #1 (reframed)
+16. Deep Cleaning Cost in Crawfordville (`/blog/deep-cleaning-cost-crawfordville/`) — money blog
 
 See also: `docs/AI-VISIBILITY-PAGE-MAP.md`
 
